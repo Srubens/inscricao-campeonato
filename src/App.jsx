@@ -86,6 +86,18 @@ function App() {
     return form.nmresponsavel && form.nmaluno && form.idade && form.altura && form.peso
   }
 
+  const encerrado = true
+
+  if(encerrado) {
+    return(
+      <div className="container">
+        <div className="mt-4 d-flex text-center mr-auto justify-content-center">
+          <h3>Inscrições encerradas!</h3>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="container mt-5" >
     <div className="col-12 text-center " >
